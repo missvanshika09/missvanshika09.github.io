@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Profile</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" />
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span style="color: red">Vanshika</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="User Image" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Dedicated and highly skilled IT graduate with exceptional academic credentials, currently enhancing expertise in advanced computing through a PG-DAC program at CDAC. 
+                        Proficient in data structures, algorithms, and programming concepts, with a strong foundation in software development, OOPS, and database design. 
+                        Passionate about tackling complex challenges to deliver innovative solutions.
+                        <br><br>
+                        📞 8511807854 | ✉️ <a href="mailto:missvanshika09@gmail.com">missvanshika09@gmail.com</a> <br>
+                        🔗 <a href="https://www.linkedin.com/in/missvanshika/" target="_blank">LinkedIn</a> | 
+                        <a href="https://github.com/missvanshika09" target="_blank">GitHub</a>
+                    </p>
+
+                    <!-- Tabs for Skills, Education, Experience -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('projects')">Projects</p>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Java, C++, C#, JavaScript</li>
+                            <li><span>Web Development</span><br>HTML5, CSS3, JavaScript, AngularJS, JSP, Servlets</li>
+                            <li><span>Databases</span><br>MySQL, SQL Server</li>
+                            <li><span>Frameworks</span><br>.NET, J2EE (Servlets, JSP)</li>
+                            <li><span>Tools & Platforms</span><br>Visual Studio, Eclipse, Apache Tomcat, Git</li>
+                            <li><span>Methodologies & OS</span><br>Agile, Waterfall, Windows, Networking</li>
+                        </ul>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Post Graduate Diploma in Advanced Computing (PG-DAC)</span><br>CDAC, Mumbai (Feb 2025)</li>
+                            <li><span>Bachelor of Engineering (Information Technology)</span><br>RGPV, RJIT Gwalior (2020) | CGPA: 8.74</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Software Engineering Intern</span><br>Praedico Global Research, Madhya Pradesh (June - July 2019)<br>
+                                Developed and optimized a web application for tax calculations. Worked with HTML, CSS, JavaScript.</li>
+                            <li><span>Developer Intern</span><br>Numeric Infosystem, Madhya Pradesh (Sept - Nov 2017)<br>
+                                Built a web application for RFID-based visitor identification. Worked with HTML, CSS, MySQL, JavaScript.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Projects -->
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Responsive Portfolio Website</span><br>Developed a dynamic and responsive portfolio website with a Google Sheets-integrated contact form.</li>
+                            <li><span>Mini Calendar App</span><br>Implemented date selection, current date highlighting, and an organized modular code structure.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Software Development</h2>
+                    <p>
+                        Expertise in building scalable and efficient software solutions using Java, C++, and .NET technologies.
+                        I follow best coding practices and design patterns to create robust applications.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        Developing dynamic and responsive web applications using HTML, CSS, JavaScript, JSP, Servlets, and AngularJS.
+                        Experienced in database integration with MySQL and SQL Server.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Database Management</h2>
+                    <p>
+                        Skilled in designing and managing databases with MySQL and SQL Server.
+                        Implementing efficient query optimization and data structuring techniques for high-performance applications.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Vehicle Configurator</h3>
+                        <p>A B2B portal for rental car companies to lease vehicles from a sponsor. Built using Jakarta EE, .NET Core, ReactJS, and MySQL. Features include car selection, configuration, real-time cost updates, invoice generation, and PDF mailing.</p>
+                        <a href="https://github.com/missvanshika09/Vehicle_Configurator" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Mini Calendar</h3>
+                        <p>A web-based mini calendar that dynamically updates the current date, day, month, and year using JavaScript. The responsive UI ensures accessibility across different devices.</p>
+                        <a href="#" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Student Portfolio Website</h3>
+                        <p>A personal portfolio website developed using HTML, CSS, and JavaScript. It provides a structured platform to showcase skills, projects, and contact details in a visually appealing and responsive design.</p>
+                        <a href="https://github.com/missvanshika09/missvanshika09.github.io" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>If you have any questions or would like to get in touch, feel free to fill out the form below.</p>
+            <form id="contact-form" method="POST" action="https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" id="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling for menu links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+        
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,  // Adjust for header height
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add active class on click
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+
+        // Open tabs
+        function openTab(tabName) {
+            let tabs = document.getElementsByClassName("tab-contents");
+            let tabLinks = document.getElementsByClassName("tab-links");
+            
+            for (let tab of tabs) {
+                tab.classList.remove("active-tab");
+            }
+            for (let link of tabLinks) {
+                link.classList.remove("active-link");
+            }
+            
+            document.getElementById(tabName).classList.add("active-tab");
+            event.currentTarget.classList.add("active-link");
+        }
+    </script>
+</body>
+</html>
